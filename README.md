@@ -1,3 +1,11 @@
+Portfolio Project
+
+## Tech Stack
+
+**React: A JavaScript library for building user interfaces.**
+**Bootstrap: A CSS framework for responsive, mobile-first front-end development.**
+**EmailJS: A service that allows sending emails directly from JavaScript without the need for a back-end.**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
