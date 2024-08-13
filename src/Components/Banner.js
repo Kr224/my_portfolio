@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../Assets/images/me.png";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -48,29 +47,29 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Karishni`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "A Programmer", "Tech enthusiast", "Lifelong learner" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am passionate Computer Science student currently pursuing my degree at Dalhousie University. I am dedicated to expanding my knowledge and skills in various programming languages and technologies. Feel free to explore my portfolio to see some of the projects I’ve worked on and get a glimpse of my journey in the tech world. I’m excited to connect with like-minded individuals!</p>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+      <section className="banner">
+        <Container>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                      <span className="tagline">Welcome to my Portfolio</span>
+                      <h1>{`Hi! I'm Karishni`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "A Programmer", "Tech enthusiast", "Lifelong learner" ]'><span className="wrap">{text}</span></span></h1>
+                      <p>I am passionate Computer Science student currently pursuing my degree at Dalhousie University. I am dedicated to expanding my knowledge and skills in various programming languages and technologies. Feel free to explore my portfolio to see some of the projects I’ve worked on and get a glimpse of my journey in the tech world. I’m excited to connect with like-minded individuals!</p>
+                    </div>}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                      <img src={headerImg} alt="Header Img"/>
+                    </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
   )
 }
