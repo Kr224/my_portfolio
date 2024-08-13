@@ -232,17 +232,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+  background: radial-gradient(circle,#FBF0B2,#FFC7EA,#D8B4F8,#CAEDFF);
   padding: 0 0 100px 0;
-  min-height: 500px;
+  min-height: 850px;
   position: relative;
 }
 .skill-bx {
-  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+  background: linear-gradient(to bottom,#FF78C4,#E1AEFF,#FFBDF7,#FFECEC);
   border-radius: 30px;
   text-align: center;
   padding: 30px 30px;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 60px;
 }
 .skill h2 {
@@ -258,19 +258,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-slider {
   width: 80%;
-  margin: 40px auto;
+  margin: 60px auto;
   position: relative;
 }
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 /************ Projects Css ************/
 .project {
