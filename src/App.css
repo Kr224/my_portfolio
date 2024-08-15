@@ -295,6 +295,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+    margin-bottom: 7%;
 }
 .project p {
   color: #B8B8B8;
@@ -416,6 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: radial-gradient(circle, #8E7AB5, #B784B7,#E493B3,#EEA5A6);
   padding: 100px 0;
   position: relative;
+  height: max-content;
 }
 
 .contact h2 {
