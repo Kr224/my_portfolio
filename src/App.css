@@ -14,72 +14,98 @@
 	src: url('./Assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
-
 /************ Default Css ************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+    font-size: 16px; /* Set a base font size for better scalability */
 }
 
 body {
-  font-weight: 400;
-  overflow-x: hidden;
-  position: relative;
-  /*background-color: rgba(255, 171, 205, 0.77) !important;*/
-  /*color: #eae5e5 !important;*/
-  font-family: 'Centra', sans-serif !important;
+    font-family: 'Centra', 'Arial', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6; /* Improved readability */
+    color: #333; /* Ensure text is visible on light backgrounds */
+    background-color: #f9f9f9; /* Light background color for the body */
 }
 
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* More control over line height */
 }
 
+/* Paragraphs and text */
 p, a, li, button, ul {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none;
+/* Links */
+a {
+    color: #007bff; /* Link color */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
 }
 
+a:hover, a:focus {
+    color: #0056b3; /* Darker color on hover */
+    text-decoration: underline;
+}
+
+/* Images */
 img {
-  width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Buttons */
 button {
-  border: 0;
-  background-color: transparent;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer; /* Indicate clickable buttons */
 }
 
+/* Form elements */
 input:focus, textarea:focus, select:focus {
-  outline: none;
+    outline: none;
+    border: 2px solid #007bff; /* Blue border on focus for better visibility */
+    border-radius: 4px; /* Rounded corners for input fields */
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+/* Media Queries */
+@media (min-width: 1700px) {
+    main .container {
+        max-width: 100%;
+        padding: 0 150px;
+    }
 }
 
+/* Success and Danger Text */
 p.success {
-	color: green;
+    color: #28a745; /* Green color for success messages */
 }
 
 p.danger {
-	color: red;
+    color: #dc3545; /* Red color for error messages */
+}
+
+/* Emoji Support */
+.emoji-text {
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Segoe UI', 'Centra', sans-serif;
+    display: inline-flex;
+    align-items: center;
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -90,13 +116,7 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
-nav.navbar.scrolled {
-  padding: 0 0;
-  background-color: #35b291;
-}
-nav.navbar a.navbar-brand {
-    width: 9%;
-}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -134,7 +154,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #a3a3ee;
+    background-color: #FDF4F5;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -143,7 +163,7 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 50%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
@@ -497,7 +517,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./Assets/images/pink sunset 1.png');
+  background: radial-gradient(circle, #FDF7C3,#FFDEB4,#FFB4B4,#B2A4FF);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -506,14 +526,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgb(163, 163, 238) -5.91%, rgba(255, 171, 205, 0.77) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -521,8 +541,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 
+.butterfly-container {
+  display: inline-block;
+  position: relative;
+}
+
+.butterfly-icon {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin-left: 8px;
+  display: inline-block;
+  animation: none;
+}
+
 .banner p {
-  color: #B8B8B8;
+  color: #867070;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -547,7 +581,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: ease-in infinite;
 }
 @keyframes updown {
     0% {
