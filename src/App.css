@@ -269,7 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background: linear-gradient(to bottom, #f8bbd0, #f48fb1);
+  background: radial-gradient(circle, #F7EFE5,#E2BFD9,#C8A1E0,#674188);
 }
 .project h2 {
 	font-size: 45px;
@@ -355,7 +355,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #D1E9F6 -5.91%, #EECAD5 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -391,26 +391,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(to bottom, #f8bbd0, #f48fb1);
-  padding: 80px 0;
+  background: radial-gradient(circle, #8E7AB5, #B784B7,#E493B3,#EEA5A6);
+  padding: 100px 0;
   position: relative;
 }
 
 .contact h2 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: match-parent;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .contact form input, .contact form textarea {
@@ -446,7 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #fff;
-  background-color: #4A2FBD;
+  background-color: #E6A4B4;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
@@ -467,7 +460,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form button::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #AC87C5 -5.91%, #E0AED0 111.58%);
   width: 0;
   height: 100%;
   position: absolute;
@@ -482,14 +475,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact img {
-  width: 90%;
+  width: 100%;
+  height: 70%;
   display: block;
   margin: 0 auto;
 }
 
 .contact::before {
   content: "";
-  background: url('Assets/images/WhatsApp GIF 2024-08-13 at 00.11.34.gif') no-repeat right bottom;
+  background: url('Assets/images/ezgif.com-coalesce.gif') no-repeat right bottom;
   background-size: 50%;
   position: absolute;
   top: 0;

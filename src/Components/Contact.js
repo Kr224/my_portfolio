@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../Assets/images/WhatsApp GIF 2024-08-13 at 00.11.34.gif";
+import contactImg from "../Assets/images/ezgif.com-coalesce.gif";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from 'emailjs-com';
